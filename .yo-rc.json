@@ -1,0 +1,34 @@
+{
+  "generator-ngx-rocket": {
+    "version": "11.0.0",
+    "props": {
+      "location": "path",
+      "strict": true,
+      "skipInstall": false,
+      "skipQuickstart": false,
+      "initGit": true,
+      "usePrefix": true,
+      "target": ["web"],
+      "ui": "material",
+      "layout": "simple",
+      "features": ["pwa", "cypress", "angulartics"],
+      "languages": ["en-US"],
+      "analyticsProvider": "ga",
+      "googleAnalyticsAccount": "",
+      "tools": ["prettier", "hads"],
+      "utility": [],
+      "deploy": "none",
+      "appName": "verstkaTask",
+      "projectName": "verstka-task",
+      "packageManager": "npm",
+      "mobile": [],
+      "desktop": [],
+      "pwa": true,
+      "auth": false,
+      "lazy": false,
+      "e2e": false,
+      "cypress": true,
+      "angulartics": true
+    }
+  }
+}
