@@ -2,7 +2,19 @@
 
 :host {
   display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 75%;
+  margin: 0 auto;
   flex: 1;
+}
+
+.mat-sidenav-container {
+  flex: 1;
+  min-height: calc(100vh - 64px);
 }
 
 .mat-sidenav {
@@ -11,7 +23,7 @@
 }
 
 .has-border {
-  border-right: 1px solid rgb(0 0 0 / 12%);
+  border-right: 1px solid rgba(0, 0, 0, 0.12);
 }
 
 .mat-list {
@@ -22,31 +34,25 @@
   text-decoration: none;
 
   &:hover {
-    background: rgb(0 0 0 / 5%);
+    background: rgba(0, 0, 0, 0.05);
   }
 }
 
-.mat-drawer-container {
-  position: unset;
+@media (max-width: 600px) {
+  .container {
+    padding-top: 56px;
+  }
+
+  .mat-sidenav-container {
+    min-height: calc(100vh - 56px);
+  }
 }
 
-.mat-sidenav,
-.mat-drawer-content,
-// Force style down to child components
-// See https://angular.io/guide/component-styles#deep
-:host ::ng-deep .mat-drawer-backdrop {
-  top: 64px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: auto;
-  position: absolute;
-}
+:host ::ng-deep .hero-section {
+  max-width: 100%;
+  overflow: hidden;
 
-@media ($mat-xsmall) {
-  .mat-sidenav,
-  .mat-drawer-content,
-  :host ::ng-deep .mat-drawer-backdrop {
-    top: 56px;
+  .container {
+    padding: 16px;
   }
 }

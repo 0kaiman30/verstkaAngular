@@ -1,0 +1,21 @@
+.subs-section-content__title {
+  background-color: var(--white-color);
+  text-align: center;
+  color: var(--text-primary-color);
+
+  h2 {
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-size: 72px;
+    font-weight: 900;
+    padding: 20px 0;
+    letter-spacing: 20px;
+  }
+
+  p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    padding: 10px 0;
+    font-weight: 400;
+    letter-spacing: 20px;
+  }
+}

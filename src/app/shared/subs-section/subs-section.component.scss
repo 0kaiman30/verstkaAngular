@@ -1,0 +1,143 @@
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+  background: var(--white-color);
+}
+
+.subs-section-content {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.subs-section-content__cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 30px 0;
+}
+
+.card {
+  border-radius: 10px;
+  padding: 40px 30px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+  transition: transform 0.3s ease, height 0.3s ease;
+  background: linear-gradient(135deg, #e6f0fa 0%, #ffffff 100%);
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 450px;
+  overflow: hidden;
+
+  &:hover {
+    transform: scale(1.05);
+    height: 500px;
+
+    .card-button-active,
+    .card-text-active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .card-title {
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: #4a90e2;
+    padding: 30px 0 10px 0;
+    margin: 0;
+  }
+
+  .most-popular {
+    font-family: "Comfortaa", sans-serif;
+    font-size: 12px;
+    color: #00ff00;
+    position: absolute;
+    top: 55px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .card-price {
+    font-family: "Comfortaa", sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    color: #4a90e2;
+    margin-bottom: 20px;
+  }
+
+  .card-specs {
+    padding: 20px 0 20px 20px;
+    border-top: 1px solid #ccc; /* Добавлена линия */
+    text-align: left;
+  }
+
+  .card-spec {
+    font-family: "Comfortaa", sans-serif;
+    font-size: 16px;
+    color: #4a90e2;
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    .spec-text {
+      flex-grow: 1;
+    }
+
+    .spec-checkmark {
+      color: #00ff00;
+    }
+
+    &:after {
+      display: none;
+    }
+  }
+
+  .card-button-active {
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 700;
+    background: linear-gradient(90deg, #4a90e2, #9b59b6);
+    color: var(--white-color);
+    border: none;
+    border-radius: 20px;
+    padding: 12px 20px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    width: 80%;
+    position: absolute;
+    bottom: 50px;
+    left: 11%;
+  }
+
+  .card-text-active {
+    font-family: "Comfortaa", sans-serif;
+    font-size: 14px;
+    color: #7f8c8d;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    position: absolute;
+    bottom: 30px;
+    left: 18%;
+  }
+}
+
+@media (max-width: 768px) {
+  .subs-section-content__cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 80%;
+  }
+}

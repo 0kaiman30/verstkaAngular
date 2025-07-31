@@ -1,0 +1,11 @@
+<section class="digits-section">
+  <div class="digits-section-content">
+    <div class="digits-section-info" *ngFor="let item of info">
+      <img class="digits-image" [src]="item.image" [alt]="item.alt" />
+      <div class="digits-section-text">
+        <p class="digits-digits">{{ item.digits }}</p>
+        <p class="digits-words">{{ item.words }}</p>
+      </div>
+    </div>
+  </div>
+</section>

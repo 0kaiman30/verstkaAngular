@@ -1,0 +1,23 @@
+<section class="subs-section">
+  <div class="subs-section-content">
+    <div class="subs-section-content__cards">
+      <div
+        class="card"
+        *ngFor="let plan of subscriptionPlans"
+        [style.background-image]="'url(' + plan.backgroundImage + ')'"
+      >
+        <p class="most-popular" *ngIf="plan.isMostPopular">Most Popular</p>
+        <p class="card-title">{{ plan.duration }}</p>
+        <p class="card-price">{{ plan.price }}</p>
+        <div class="card-specs">
+          <p class="card-spec" *ngFor="let spec of plan.specs">
+            <span class="spec-text">{{ spec }}</span>
+            <span class="spec-checkmark">✓</span>
+          </p>
+        </div>
+        <button class="card-button-active">Sign Up</button>
+        <p class="card-text-active">14-day money back guarantee</p>
+      </div>
+    </div>
+  </div>
+</section>

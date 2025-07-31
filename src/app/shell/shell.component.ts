@@ -17,7 +17,6 @@ export class ShellComponent implements OnInit {
   constructor(private breakpoint: BreakpointObserver) {}
 
   ngOnInit() {
-    // Automatically close side menu on screens > small breakpoint
     this.breakpoint
       .observe([Breakpoints.Small, Breakpoints.XSmall])
       .pipe(

@@ -1,17 +1,51 @@
-/*
- * Global application theme.
- * Framework overrides and customization goes here.
- */
-
-// stylelint-disable-next-line selector-max-universal
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-html,
-body {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  height: 100%;
+:root {
+  --black-color: #000000;
+  --white-color: #ffffff;
+  --text-primary-color: rgba(59, 102, 141, 1);
+  --text-secondary-color: rgba(121, 120, 143, 1);
+  --transparent-color: transparent;
+  --purple-color: rgba(187, 109, 243, 1);
+}
+
+button[mat-button] {
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 700;
+  background-color: #6200ea;
+  color: var(--black-color);
+  border-radius: 8px;
+  padding: 0 20px;
+  font-size: 16px;
+  line-height: 40px;
+}
+
+button[mat-button][routerLinkActive="active"] {
+  background-color: rgba(110, 255, 0, 0);
+  font-family: "Comfortaa", sans-serif;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/Roboto/Roboto-VariableFont_wdth,wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Comfortaa";
+  src: url("../assets/fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }

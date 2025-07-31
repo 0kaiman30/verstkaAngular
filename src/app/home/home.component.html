@@ -1,24 +1,13 @@
-<div class="container">
-  <mat-card>
-    <p>
-      <img class="logo" src="assets/ngx-rocket-logo.png" alt="angular logo" />
-    </p>
-    <mat-card-content>
-      <mat-card-title translate>Hello world !</mat-card-title>
-      <mat-card-subtitle>
-        <app-loader [isLoading]="isLoading" [size]="1.5"></app-loader>
-        <q [hidden]="isLoading">{{ quote }}</q>
-      </mat-card-subtitle>
-      <mat-card-actions>
-        <button
-          mat-raised-button
-          angulartics2On="click"
-          angularticsAction="Click button below quote"
-          angularticsCategory="test"
-        >
-          Click me to send an Analytics event
-        </button>
-      </mat-card-actions>
-    </mat-card-content>
-  </mat-card>
-</div>
+<section class="home-page">
+  <div class="container">
+    <app-hero-section></app-hero-section>
+    <app-info-section></app-info-section>
+    <div class="subs-section-content__title">
+      <h2>Become a PREMIUM MEMBER</h2>
+      <p>Premium Business</p>
+      <p>1 TB free space and 4 TB monthly transfer</p>
+    </div>
+    <app-subs-section></app-subs-section>
+    <app-digits-section></app-digits-section>
+  </div>
+</section>

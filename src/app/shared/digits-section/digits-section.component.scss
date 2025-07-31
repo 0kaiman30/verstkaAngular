@@ -1,0 +1,44 @@
+.digits-section {
+  background-color: var(--white-color);
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+  text-align: center;
+
+  .digits-section-content {
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    max-width: 1200px;
+
+    .digits-section-info {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .digits-section-text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .digits-digits {
+          font-family: "Comfortaa", sans-serif;
+          font-size: 35px;
+          font-weight: 700;
+          color: var(--text-primary-color);
+        }
+
+        .digits-words {
+          font-family: "Comfortaa", sans-serif;
+          font-size: 15px;
+          color: var(--text-secondary-color);
+        }
+      }
+
+      .digits-image {
+        width: 90px;
+        height: 90px;
+      }
+    }
+  }
+}

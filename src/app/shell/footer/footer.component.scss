@@ -1,0 +1,107 @@
+.footer-section {
+  background-image: url("../../../assets/images/BG_footer.png");
+  background-size: cover;
+  background-position: top;
+  padding: 0 80px;
+  width: 100%;
+  min-height: 580px;
+  color: var(--white-color);
+  position: relative;
+
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 0 30px;
+
+    .footer-content-columns {
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+      margin-top: 220px;
+
+      .footer-about-us-column,
+      .footer-featured-links-column,
+      .footer-contact-us-column {
+        flex: 1;
+
+        h3 {
+          font-family: "Comfortaa", sans-serif;
+          font-size: 40px;
+          font-weight: bold;
+          padding-bottom: 50px;
+        }
+
+        a {
+          display: block;
+          color: var(--white-color);
+          opacity: 1;
+          transition: opacity 0.3s;
+          font-size: 20px;
+          font-family: "Comfortaa", sans-serif;
+          font-weight: 400;
+          text-decoration: underline;
+        }
+
+        p {
+          font-size: 20px;
+          font-family: "Comfortaa", sans-serif;
+          font-weight: 400;
+        }
+      }
+    }
+
+    .footer-featured-links-column a,
+    .footer-contact-us-column p {
+      line-height: 1.8;
+      margin-bottom: 10px;
+    }
+
+    hr {
+      border: 0;
+      height: 1px;
+      background-color: var(--white-color);
+      opacity: 0.3;
+      margin-top: 70px;
+    }
+  }
+}
+
+.footer-copyright {
+  font-family: "Comfortaa", sans-serif;
+  text-align: center;
+  font-size: 17px;
+  padding: 10px 0 40px 0;
+  background-color: #956aff;
+  color: var(--white-color);
+}
+
+@media (max-width: 768px) {
+  .footer-section {
+    .footer-content {
+      padding: 40px 20px 20px;
+
+      .footer-content-columns {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 200px;
+        gap: 40px;
+
+        .footer-about-us-column,
+        .footer-featured-links-column,
+        .footer-contact-us-column {
+          max-width: 100%;
+          text-align: center;
+
+          h3 {
+            font-size: 36px;
+          }
+        }
+      }
+
+      hr {
+        margin-top: 30px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}

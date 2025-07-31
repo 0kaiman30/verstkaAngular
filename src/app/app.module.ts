@@ -13,9 +13,10 @@ import { environment } from '@env/environment';
 import { RouteReusableStrategy, ApiPrefixInterceptor, ErrorHandlerInterceptor, SharedModule } from '@shared';
 import { HomeModule } from './home/home.module';
 import { ShellModule } from './shell/shell.module';
-import { AboutModule } from './about/about.module';
+import { ContactModule } from '@app/contact/contact.module';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { PricingModule } from '@app/pricing/pricing.module';
 
 @NgModule({
   imports: [
@@ -30,7 +31,8 @@ import { AppRoutingModule } from './app-routing.module';
     SharedModule,
     ShellModule,
     HomeModule,
-    AboutModule,
+    ContactModule,
+    PricingModule,
     Angulartics2Module.forRoot(),
     AppRoutingModule, // must be imported as the last module as it contains the fallback route
   ],
