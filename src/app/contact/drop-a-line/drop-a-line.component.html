@@ -1,0 +1,26 @@
+<section class="drop-a-line-section">
+  <div class="drop-a-line-section-content">
+    <div>
+      <h2>Drop us a line</h2>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <form class="form-grid">
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" type="email" [(ngModel)]="email" name="email" placeholder="mail@example.com" />
+        </div>
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input id="name" type="text" [(ngModel)]="name" name="name" placeholder="John Doe" />
+        </div>
+        <div class="form-row full-row">
+          <textarea id="message" [(ngModel)]="message" name="message" placeholder="Message"></textarea>
+        </div>
+      </form>
+
+      <div class="drop-ap-line-button-part">
+        <p class="privacy-note">We do not share your personal data.</p>
+        <app-button width="80px" text="Subscribe"></app-button>
+      </div>
+    </div>
+  </div>
+</section>

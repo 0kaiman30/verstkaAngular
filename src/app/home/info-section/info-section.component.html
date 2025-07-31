@@ -1,12 +1,14 @@
-<div class="info-section-content">
-  <img src="../../../assets/images/info_section_photo.png" alt="Изображение секции" />
-  <div class="info-section__features">
-    <div *ngFor="let feature of features" class="info-section__feature">
-      <img [src]="feature.icon" [alt]="feature.title" class="info-section__icon" />
-      <div class="info-section-content__text">
-        <p class="info-section__title">{{ feature.title }}</p>
-        <p class="info-section__description">{{ feature.description }}</p>
+<section class="info-section">
+  <div class="info-section-content">
+    <img src="../../../assets/images/info_section_photo.png" alt="Изображение секции" />
+    <div class="info-section__features">
+      <div *ngFor="let feature of features" class="info-section__feature">
+        <img [src]="feature.icon" [alt]="feature.title" class="info-section__icon" />
+        <div class="info-section-content__text">
+          <p class="info-section__title">{{ feature.title }}</p>
+          <p class="info-section__description">{{ feature.description }}</p>
+        </div>
       </div>
     </div>
   </div>
-</div>
+</section>
