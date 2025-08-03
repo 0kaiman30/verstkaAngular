@@ -17,6 +17,7 @@ import { ContactModule } from '@app/contact/contact.module';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { PricingModule } from '@app/pricing/pricing.module';
+import { FaqModule } from '@app/faq/faq.module';
 
 @NgModule({
   imports: [
@@ -32,9 +33,10 @@ import { PricingModule } from '@app/pricing/pricing.module';
     ShellModule,
     HomeModule,
     ContactModule,
+    FaqModule,
     PricingModule,
     Angulartics2Module.forRoot(),
-    AppRoutingModule, // must be imported as the last module as it contains the fallback route
+    AppRoutingModule,
   ],
   declarations: [AppComponent],
   providers: [

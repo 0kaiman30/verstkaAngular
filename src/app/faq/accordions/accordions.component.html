@@ -1,0 +1,11 @@
+<section class="accordions">
+  <div class="accordions-content">
+    <div *ngFor="let item of faqItems; let i = index" class="accordion">
+      <input type="checkbox" id="accordion-{{ i }}" />
+      <label for="accordion-{{ i }}">{{ item.question }}</label>
+      <div class="content">
+        <p>{{ item.answer }}</p>
+      </div>
+    </div>
+  </div>
+</section>

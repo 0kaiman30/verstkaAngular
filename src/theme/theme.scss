@@ -49,3 +49,7 @@ button[mat-button][routerLinkActive="active"] {
   font-weight: normal;
   font-style: normal;
 }
+
+.mat-drawer-container {
+  background-color: var(--white-color);
+}

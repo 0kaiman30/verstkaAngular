@@ -1,0 +1,57 @@
+.accordions {
+  padding: 30px;
+}
+
+.accordion {
+  margin-bottom: 15px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: linear-gradient(90deg, rgba(177, 227, 255, 1), rgba(223, 190, 255, 1));
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  position: relative;
+
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 20px;
+    background: transparent;
+    color: var(--black-color);
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+
+    &::after {
+      content: "+";
+      font-size: 22px;
+      font-weight: bold;
+      transition: transform 0.3s ease;
+    }
+  }
+
+  input[type="checkbox"]:checked + label::after {
+    content: "−";
+  }
+
+  .content {
+    max-height: 0;
+    padding: 0 20px;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    background: var(--white-color);
+    color: var(--text-secondary-color);
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+  }
+
+  input[type="checkbox"]:checked ~ .content {
+    max-height: 500px;
+    padding: 15px 20px;
+  }
+}
