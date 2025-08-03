@@ -11,4 +11,5 @@ export class ButtonComponent {
   @Input() position: string = 'relative';
   @Input() bottom: string = '0';
   @Input() left: string = '0';
+  @Input() padding: string = '2px';
 }

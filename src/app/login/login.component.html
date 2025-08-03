@@ -1,1 +1,24 @@
-<p>login works!</p>
+<section class="login-section">
+  <div class="login-section-content">
+    <div class="login-section-content__title">
+      <h2>LOGIN</h2>
+      <p>ONLINE STORAGE</p>
+    </div>
+    <div class="login-form">
+      <form class="form-grid">
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" type="email" [(ngModel)]="email" name="email" placeholder="mail@example.com" />
+        </div>
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input id="name" type="text" [(ngModel)]="name" name="name" placeholder="John Doe" />
+        </div>
+      </form>
+      <div class="login-button-part">
+        <app-button width="70%" text="Login"></app-button>
+        <a class="privacy-note">Forget password</a>
+      </div>
+    </div>
+  </div>
+</section>

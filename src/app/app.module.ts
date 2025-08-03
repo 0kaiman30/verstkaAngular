@@ -18,6 +18,8 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { PricingModule } from '@app/pricing/pricing.module';
 import { FaqModule } from '@app/faq/faq.module';
+import { LoginModule } from '@app/login/login.module';
+import { RegisterModule } from '@app/register/register.module';
 
 @NgModule({
   imports: [
@@ -34,7 +36,9 @@ import { FaqModule } from '@app/faq/faq.module';
     HomeModule,
     ContactModule,
     FaqModule,
+    LoginModule,
     PricingModule,
+    RegisterModule,
     Angulartics2Module.forRoot(),
     AppRoutingModule,
   ],

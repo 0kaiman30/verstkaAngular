@@ -5,8 +5,9 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.scss'],
 })
-export class RegisterComponent implements OnInit {
-  constructor() {}
-
-  ngOnInit(): void {}
+export class RegisterComponent {
+  email: string = 'mail@example.com';
+  name: string = 'John Doe';
+  password: string = '***********';
+  repassword: string = '***********';
 }

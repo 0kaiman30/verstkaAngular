@@ -1,1 +1,36 @@
-<p>register works!</p>
+<section class="register-section">
+  <div class="register-section-content">
+    <div class="register-section-content__title">
+      <h2>REGISTER</h2>
+      <p>ONLINE STORAGE</p>
+    </div>
+    <div class="register-form">
+      <form class="form-grid">
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" type="email" [(ngModel)]="email" name="email" placeholder="mail@example.com" />
+        </div>
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input id="name" type="text" [(ngModel)]="name" name="name" placeholder="John Doe" />
+        </div>
+        <div class="form-row">
+          <label for="password">Password</label>
+          <input id="password" type="text" [(ngModel)]="password" name="password" placeholder="***********" />
+        </div>
+        <div class="form-row">
+          <label for="repassword">Re-password</label>
+          <input id="repassword" type="text" [(ngModel)]="repassword" name="repassword" placeholder="***********" />
+        </div>
+      </form>
+      <div class="register-button-part">
+        <label class="checkbox-wrapper">
+          <input type="checkbox" class="privacy-checkbox" />
+          <span>I agree with terms</span>
+        </label>
+        <app-button [text]="'Register'"></app-button>
+      </div>
+    </div>
+    <app-digits-section></app-digits-section>
+  </div>
+</section>
