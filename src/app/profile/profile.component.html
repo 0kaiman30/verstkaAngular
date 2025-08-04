@@ -1,1 +1,58 @@
-<p>profile works!</p>
+<section class="profile-section">
+  <div class="profile-section-content">
+    <div class="profile-section-content__title">
+      <h2>PROFILE</h2>
+      <p>ONLINE STORAGE</p>
+    </div>
+    <div class="profile-indicators">
+      <div class="indicator">
+        <img class="indicator-image" src="../../assets/images/profile-indicator.png" alt="profile-indicator" />
+        <div class="indicator-text">
+          <span class="indicator-title">ACCOUNT TYPE:</span>
+          <span class="indicator-value">VIP 90 DAYS</span>
+        </div>
+      </div>
+      <div class="indicator">
+        <img class="indicator-image" src="../../assets/images/profile-indicator.png" alt="profile-indicator" />
+        <div class="indicator-text">
+          <span class="indicator-title">LEFT:</span>
+          <span class="indicator-value">37 DAYS</span>
+        </div>
+      </div>
+      <div class="indicator">
+        <img class="indicator-image" src="../../assets/images/profile-indicator.png" alt="profile-indicator" />
+        <div class="indicator-text">
+          <span class="indicator-title">FILE STORED TOTAL:</span>
+          <span class="indicator-value">1 239 345 GB</span>
+        </div>
+      </div>
+    </div>
+    <div class="profile-form">
+      <form class="form-grid">
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" type="email" [(ngModel)]="email" name="email" placeholder="mail@example.com" />
+          <app-button text="Verify"></app-button>
+        </div>
+        <div class="form-row">
+          <label for="password">Password</label>
+          <input id="password" type="password" [(ngModel)]="password" name="password" placeholder="***********" />
+        </div>
+        <div class="form-row">
+          <label for="repassword">Re New Password</label>
+          <input id="repassword" type="password" [(ngModel)]="repassword" name="repassword" placeholder="***********" />
+        </div>
+      </form>
+      <div class="profile-button-part">
+        <label class="checkbox-wrapper">
+          <input type="checkbox" class="privacy-checkbox" />
+          <div class="checkbox-text">
+            <span class="main-text">User Direct Links</span>
+            <span class="sub-text">Only for Premium users</span>
+          </div>
+        </label>
+        <app-button text="Save"></app-button>
+      </div>
+    </div>
+  </div>
+</section>

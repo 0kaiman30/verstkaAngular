@@ -20,6 +20,7 @@ import { PricingModule } from '@app/pricing/pricing.module';
 import { FaqModule } from '@app/faq/faq.module';
 import { LoginModule } from '@app/login/login.module';
 import { RegisterModule } from '@app/register/register.module';
+import { ProfileModule } from '@app/profile/profile.module';
 
 @NgModule({
   imports: [
@@ -39,6 +40,7 @@ import { RegisterModule } from '@app/register/register.module';
     LoginModule,
     PricingModule,
     RegisterModule,
+    ProfileModule,
     Angulartics2Module.forRoot(),
     AppRoutingModule,
   ],
